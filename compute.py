@@ -1,6 +1,6 @@
 #########################################
 #This python codes for Analyze Re solves
-#Codes are from the tnterviewee Dingjun 
+#Codes are from the interviewee Dingjun
 #Date: 11/22/2022
 #########################################
 
