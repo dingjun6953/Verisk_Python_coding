@@ -1,6 +1,6 @@
 #########################################
 #This python codes for Analyze Re solves
-#Codes are from the interviewee Dingjun
+#Codes are from the interviewee Dingjun 
 #Date: 11/22/2022
 #########################################
 
@@ -35,9 +35,13 @@ reachLimit = False
 #The standard input or stdin device to give commands is the keyboard
 for line in sys.stdin:
     # Normally Ctrl+D for exit from the stdin keyboard
-    if 'q'==line.rstrip(): # in case of exit from stdin for emergency
+    if 'q'==line.rstrip(): # in case of emergent exit from stdin
         break
-    inputs.append(float(line))
+    if len(inputs)+1 > 100: # there are up to 100 lines numbers for the standard input
+        break
+    else:
+        inputs.append(float(line))
+
 
 for num in inputs:
     if num <= threshold:  #in case of the input number is less than or equal to the threshold
